@@ -29,7 +29,7 @@ def banner():
        
 ngay=int(strftime('%d'))
 key1=str(ngay*122883747489246546+2345995852828*399384848484+9993939372)
-key = ' 100047128875560'+key1
+key = '100047128875560'+key1
 
 url1 = 'https://pktool.rf.gd/key.html?key='+key 
 token_link1s = '9dcbc15f63ec39eab39bd07a14a46c8e607323f2'
@@ -47,7 +47,7 @@ if keynhap == key:
 else:
     print("Key Sai Vui Lòng Vượt Link Lại")
     quit()
-print(".....")
+print("......")
 
 def dk():
    a= "\033[1;91m=\033[1;97m="*30
@@ -87,7 +87,7 @@ from pystyle import Box
 os.system('clear')
 banner()
 dk()
-print("- - - - - - - - - - - PKTOOL - - - - - - - - - - - - -")
+print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
 print()
 print(sr+"Nhập [1] PKTOOL DDOS")
 print()
