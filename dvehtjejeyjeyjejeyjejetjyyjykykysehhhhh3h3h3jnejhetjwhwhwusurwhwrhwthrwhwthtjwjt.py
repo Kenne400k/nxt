@@ -26,29 +26,6 @@ def banner():
        ╚═════════════════════════════════════════════════════╝
 
 """)
-       
-ngay=int(strftime('%d'))
-key1=str(ngay*122883747489246546+2345995852828*399384848484+9993939372)
-key = '100047128875560'+key1
-
-url1 = 'http://pktool.rf.gd/key.html?key='+key 
-token_link1s = '4d8f3ed4727a86f7f99b129792402334b42b99cf'
-link1s = requests.get(f'https://link1s.com/api?api={token_link1s}&url={url1}').json()
-if link1s['status']=="error": 
-	print(link1s['message'])
-	quit()
-else:
-	link_key=link1s['shortenedUrl']
-banner()
-print('Link Để Vượt Key Là: '+link_key)
-keynhap = input('Key Đã Vượt Là: ')
-if keynhap == key:
-    print('Key Đúng Mời Bạn Dùng Tool')
-else:
-    print("Key Sai Vui Lòng Vượt Link Lại")
-    quit()
-print("......")
-
 def dk():
    a= "\033[1;91m=\033[1;97m="*30
    for i in range(len(a)):
