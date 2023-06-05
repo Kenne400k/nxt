@@ -31,7 +31,7 @@ def banner():
        ╚═════════════════════════════════════════════════════╝
 ''')
     
-def dk():
+def d():
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
         sys.stdout.write(a[i])
@@ -69,18 +69,18 @@ def ra(a):
     print()
 
 def main():
-    dk()
+    d()
     from pystyle import Box
     os.system('clear')
     banner()
-    dk()
+    d()
     print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
     print()
     print(sr+"Nhập [1] PKTOOL DDOS")
     print()
-    dk()
+    d()
     abc = int(input(sr+"Nhập Số : "))
-    dk()
+    d()
 
     try:
         if abc == 1:
