@@ -30,14 +30,6 @@ def banner():
        ║         facebook.com/100047128875560                ║
        ╚═════════════════════════════════════════════════════╝
 ''')
-    
-def d():
-    a = "\033[1;91m=\033[1;97m=" * 30
-    for i in range(len(a)):
-        sys.stdout.write(a[i])
-        sys.stdout.flush()
-        sleep(0.001)
-    print()
 
 def delay(dl):
     try:
@@ -69,18 +61,38 @@ def ra(a):
     print()
 
 def main():
-    d()
+    a = "\033[1;91m=\033[1;97m=" * 30
+    for i in range(len(a)):
+        sys.stdout.write(a[i])
+        sys.stdout.flush()
+        sleep(0.001)
+    print()
     from pystyle import Box
     os.system('clear')
     banner()
-    d()
+    a = "\033[1;91m=\033[1;97m=" * 30
+    for i in range(len(a)):
+        sys.stdout.write(a[i])
+        sys.stdout.flush()
+        sleep(0.001)
+    print()
     print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
     print()
     print(sr+"Nhập [1] PKTOOL DDOS")
     print()
-    d()
+    a = "\033[1;91m=\033[1;97m=" * 30
+    for i in range(len(a)):
+        sys.stdout.write(a[i])
+        sys.stdout.flush()
+        sleep(0.001)
+    print()
     abc = int(input(sr+"Nhập Số : "))
-    d()
+    a = "\033[1;91m=\033[1;97m=" * 30
+    for i in range(len(a)):
+        sys.stdout.write(a[i])
+        sys.stdout.flush()
+        sleep(0.001)
+    print()
 
     try:
         if abc == 1:
