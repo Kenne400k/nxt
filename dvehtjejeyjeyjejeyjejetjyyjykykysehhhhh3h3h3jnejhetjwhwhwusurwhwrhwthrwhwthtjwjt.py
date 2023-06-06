@@ -31,24 +31,6 @@ def banner():
        ╚═════════════════════════════════════════════════════╝
 ''')
 
-def delay(dl):
-    sr = "\033[1;91m『\033[1;97m亗\033[1;91m』"
-    r = "\033[1;97m▶▶\033[1;92m"
-    try:
-        for i in range(dl, -1, -1):
-            print(sr+'Chờ '+r+' '+str(i)+' Giây [-]          ', end='\r')
-            sleep(0.2)
-            print(sr+'Chờ '+r+' '+str(i)+' Giây [\]          ', end='\r')
-            sleep(0.2)
-            print(sr+'Chờ '+r+' '+str(i)+' Giây [|]          ', end='\r')
-            sleep(0.2)
-            print(sr+'Chờ '+r+' '+str(i)+' Giây [/]          ', end='\r')
-            sleep(0.2)
-            print(sr+'Chờ '+r+' '+str(i)+' Giây [🔥]          ', end='\r')
-            sleep(0.2)
-    except:
-        sleep(dl)
-        print(dl, end='\r')
 
 s = "\033[1;91m『\033[1;97m亗\033[1;91m』"
 r = "\033[1;97m▶▶\033[1;92m"
