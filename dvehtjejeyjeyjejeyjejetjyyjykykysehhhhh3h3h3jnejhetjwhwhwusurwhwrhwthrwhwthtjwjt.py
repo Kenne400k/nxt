@@ -34,7 +34,6 @@ def banner():
 
 s = "\033[1;91m『\033[1;97m亗\033[1;91m』"
 r = "\033[1;97m▶▶\033[1;92m"
-sr = s+r+' '
 
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 
