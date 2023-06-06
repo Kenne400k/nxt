@@ -50,7 +50,6 @@ def delay(dl):
         sleep(dl)
         print(dl, end='\r')
 
-    
 s = "\033[1;91m『\033[1;97m亗\033[1;91m』"
 r = "\033[1;97m▶▶\033[1;92m"
 sr = s+r+' '
