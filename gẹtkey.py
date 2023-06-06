@@ -53,7 +53,7 @@ def main():
     print()
     print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
     print()
-    print(sr+"Nhập [1] PKTOOL DDOS")
+    print("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập [1] PKTOOL DDOS")
     print()
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
@@ -61,7 +61,7 @@ def main():
         sys.stdout.flush()
         sleep(0.001)
     print()
-    abc = int(input(sr+"Nhập Số : "))
+    abc = int(input("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập Số : "))
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
         sys.stdout.write(a[i])
