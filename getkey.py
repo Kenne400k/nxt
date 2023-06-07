@@ -68,7 +68,7 @@ def main():
     print()
 
     if choice == "1":
-        url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py"
+        url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pkdosss.py"
         get_code_from_github(url)
     elif choice == "2":
         url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go"
