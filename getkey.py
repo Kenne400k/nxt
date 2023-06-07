@@ -37,16 +37,6 @@ def ra(a):
         sys.stdout.flush()
     print()
     
-
-def get_code_from_github(url):
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        code = response.text
-        exec(code)
-    else:
-        print("Không thể lấy mã từ URL:", url)
-
 def main():
     from pystyle import Box
     os.system('clear')
