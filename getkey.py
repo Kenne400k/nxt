@@ -66,13 +66,10 @@ def main():
 
     if choice == "1":
         url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py"
-        get_code_from_github(url)
     elif choice == "2":
         url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go"
-        get_code_from_github(url)
     elif choice == "3":
         url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/getkey.py"
-        get_code_from_github(url)
     elif choice == "4":
         sys.exit("Đã thoát")
     else:
