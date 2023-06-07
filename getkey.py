@@ -29,14 +29,23 @@ def banner():
        ╔════════════════╩═══════════════════╩════════════════╗
        ║          Nguyễn Trương Thiện Phát                   ║
        ║         facebook.com/100047128875560                ║
-       ╚═════════════════════════════════════════════════════╝
-''')
+       ╚═════════════════════════════════════════════════════╝''')
 
 def ra(a):
     for i in range(len(a)):
         sys.stdout.write(a[i])
         sys.stdout.flush()
     print()
+    
+
+def get_code_from_github(url):
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        code = response.text
+        exec(code)
+    else:
+        print("Không thể lấy mã từ URL:", url)
 
 def main():
     from pystyle import Box
@@ -51,6 +60,8 @@ def main():
     print("- - - - - - - - - - - PKDDOS NTTP - - - - - - - - - - - - -")
     print()
     print("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập [1] PKTOOL DDOS")
+    print("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập [2] PKTOOL COMING SOON")
+    print("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập [3] Thoát")
     print()
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
@@ -58,7 +69,7 @@ def main():
         sys.stdout.flush()
         sleep(0.001)
     print()
-    abc = int(input("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập Số : "))
+    choice = input("\033[1;91m『\033[1;97m亗\033[1;91m』\033[1;97m▶▶\033[1;92m Nhập Số : ")
     a = "\033[1;91m=\033[1;97m=" * 30
     for i in range(len(a)):
         sys.stdout.write(a[i])
@@ -66,15 +77,16 @@ def main():
         sleep(0.001)
     print()
 
-    try:
-        if abc == 1:
-            code = requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pkdosss.py").text
-            exec(code)
-        elif abc == 2:
-            code = requests.get("https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go").text
-            exec(code)
-    except Exception as e:
-        print("Đã xảy ra lỗi:", str(e))
+    if choice == "1":
+        url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk.py"
+        get_code_from_github(url)
+    elif choice == "2":
+        url = "https://raw.githubusercontent.com/Kenne400k/nxt/main/pk1.go"
+        get_code_from_github(url)
+    elif choice == "3":
+        return
+    else:
+        print("Lựa chọn không hợp lệ. Vui lòng chọn lại.")
 
 if __name__ == "__main__":
     main()
